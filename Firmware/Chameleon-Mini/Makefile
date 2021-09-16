@@ -99,7 +99,7 @@ SPM_HELPER_OBJCOPY = --set-section-flags=.spmhelper="alloc,load"
 ifeq ($(OS),Windows_NT)
 BUILD_DATE   = "\"$(shell date -I)\""
 else
-BUILD_DATE   = $(shell date +'\"%y%m%d\"')
+BUILD_DATE   = $(shell date +'\"%Y%m%d\"')
 endif
 COMMIT_ID	 = $(shell git rev-parse --short HEAD)
 MCU          = atxmega128a4u

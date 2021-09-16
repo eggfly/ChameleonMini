@@ -27,7 +27,7 @@ CommandStatusIdType CommandGetVersion(char *OutParam) {
     snprintf_P(OutParam, TERMINAL_BUFFER_SIZE, PSTR(
 //    "ChameleonMini RevG %S using LUFA %S compiled with AVR-GCC %S. Based on the open-source NFC tool ChameleonMini. https://github.com/emsec/ChameleonMini commit %S"
 //    ), PSTR(CHAMELEON_MINI_VERSION_STRING), PSTR(LUFA_VERSION_STRING), PSTR(__VERSION__), PSTR(COMMIT_ID)
-                   "ChameleonMini RevG compiled at %S %S(%S) using LUFA %S with AVR-GCC %S."
+                   "ChameleonMini RevG compiled by eggfly@qq.com at %S %S(%S) using LUFA %S with AVR-GCC %S."
                ), PSTR(BUILD_DATE), PSTR(__TIME__), PSTR(COMMIT_ID), PSTR(LUFA_VERSION_STRING), PSTR(__VERSION__)
               );
 
